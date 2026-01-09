@@ -124,7 +124,7 @@ func New[M proto.Message](
 		consumerGroup:    consumerGroup,
 		deserializer:     bus.NewDeserializer[M](),
 		consumers:        xsync.NewMapOf[tp, *partitionConsumer[M]](),
-		batchSize:        10_000,
+		batchSize:        100,
 		quit:             make(chan struct{}),
 	}
 	consumer.messageHandler = consumer.defaultMessageHandler
@@ -272,8 +272,8 @@ func WithBatchSize[M proto.Message](batchSize int) ConsumerOption[M] {
 	return func(consumer *Consumer[M]) {
 		if batchSize <= 0 {
 			consumer.log(context.Background(), slog.LevelWarn,
-				"invalid batch size, using default value of 10_000")
-			batchSize = 10_000
+				"invalid batch size, using default value of 100")
+			batchSize = 100
 		}
 		consumer.batchSize = batchSize
 	}
