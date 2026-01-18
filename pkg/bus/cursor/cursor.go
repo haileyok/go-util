@@ -14,9 +14,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bluesky-social/go-util/pkg/bus"
-	"github.com/bluesky-social/go-util/pkg/bus/kafka"
 	"github.com/confluentinc/confluent-kafka-go/v2/schemaregistry/serde"
+	"github.com/haileyok/go-util/pkg/bus"
+	"github.com/haileyok/go-util/pkg/bus/kafka"
 	"github.com/rs/xid"
 	"github.com/twmb/franz-go/pkg/kgo"
 	"google.golang.org/protobuf/proto"

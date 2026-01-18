@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bluesky-social/go-util/pkg/bus"
-	"github.com/bluesky-social/go-util/pkg/bus/kafka"
-	"github.com/bluesky-social/go-util/pkg/bus/producer"
 	"github.com/confluentinc/confluent-kafka-go/v2/schemaregistry/serde"
+	"github.com/haileyok/go-util/pkg/bus"
+	"github.com/haileyok/go-util/pkg/bus/kafka"
+	"github.com/haileyok/go-util/pkg/bus/producer"
 	"github.com/puzpuzpuz/xsync/v3"
 	"github.com/twmb/franz-go/pkg/kgo"
 	"google.golang.org/protobuf/proto"

@@ -1,7 +1,7 @@
 package consumer
 
 import (
-	"github.com/bluesky-social/go-util/pkg/bus"
+	"github.com/haileyok/go-util/pkg/bus"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 )

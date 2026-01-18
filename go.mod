@@ -1,4 +1,4 @@
-module github.com/bluesky-social/go-util
+module github.com/haileyok/go-util
 
 go 1.24.5
 
@@ -15,6 +15,7 @@ require (
 	github.com/twmb/franz-go v1.19.5
 	github.com/twmb/franz-go/pkg/kadm v1.16.1
 	github.com/urfave/cli/v2 v2.25.7
+	github.com/urfave/cli/v3 v3.6.2
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.49.0
 	golang.org/x/sync v0.13.0
 	google.golang.org/protobuf v1.36.9
